@@ -1,7 +1,14 @@
 {
     "name": "maadam-solutions/sylius-zettle-plugin",
     "type": "sylius-plugin",
-    "description": "Acme example plugin for Sylius.",
+    "description": "Zettle payment plugin for Sylius.",
+    "licence": "MIT",
+    "authors": [
+        {
+            "name": "Tayor CACHEDON",
+            "email": "tcachedon@maadam-solutions.com"
+        }
+    ],
     "keywords": [
         "sylius",
         "sylius-plugin"
