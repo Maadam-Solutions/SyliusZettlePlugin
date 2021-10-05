@@ -2,7 +2,7 @@ app.sylius_payment:
   class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
   arguments: [ MaadamSolutions\SyliusZettlePlugin\Payum\SyliusPaymentGatewayFactory ]
   tags:
-    - { name: payum.gateway_factory_builder, factory: sylius_zettle }
+    - { name: payum.gateway_factory_builder, factory: sylius_payment }
 
 MaadamSolutions\SyliusZettlePlugin\Form\Type\SyliusGatewayConfigurationType:
   tags:
@@ -13,4 +13,4 @@ MaadamSolutions\SyliusZettlePlugin\Payum\Action\CaptureAction:
   arguments:
     - '@sylius.http_client'
   tags:
-    - { name: payum.action, factory: sylius_zettle, alias: payum.action.capture }
+    - { name: payum.action, factory: sylius_payment, alias: payum.action.capture }
